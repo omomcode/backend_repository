@@ -23,9 +23,7 @@ cd tasks
 if [[ $dependency_flag -eq 1 ]]; then
     if ! command -v yq &> /dev/null
     then
-        echo "yq is not installed. Installing yq using snap..."
 		echo "Smederevo123" | sudo -S snap install yq
-		# sudo snap install yq
     fi
 	./install_dependencies.sh
 fi
