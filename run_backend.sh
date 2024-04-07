@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # root user is the user who can grant privileges
-export DATABASE_USER="root"
-export DATABASE_PASSWORD="root"
+export DATABASE_USER="alex"
+export DATABASE_PASSWORD="alex"
 export DATABASE_NAME="ekomerc"
 export DUMP_NAME="ecommerce-20240402184403"
 export DATABASE_HOST="localhost"
@@ -18,13 +18,18 @@ export port="1337"
 
 dependency_flag=1
 
+cd tasks
+
 if [[ $dependency_flag -eq 1 ]]; then
     if ! command -v yq &> /dev/null
     then
 		echo "Smederevo123" | sudo -S snap install yq
     fi
-	chmod +x tasks/install_dependencies.sh
+	chmod +x install_dependencies.sh
+	./install_dependencies.sh
 fi
+
+cd ..
 
 cd backend
 
@@ -81,38 +86,4 @@ cd backend
 
 npm i
 
-npm i @strapi/strapi
-
-npm run build
-
-nohup npm run start &
-
-cd ..
-cd tasks
-
-# Create strapi user
-chmod +x strapi_createuser.sh
-./strapi_createuser.sh "$STRAPI_USER_FIRSTNAME" "$STRAPI_USER_LASTNAME" "$STRAPI_USER_EMAIL" "$STRAPI_USER_PASSWORD" 
-
-
-# Login strapi user
-chmod +x strapi_loginuser.sh
-token=$(./strapi_loginuser.sh "$STRAPI_USER_EMAIL" "$STRAPI_USER_PASSWORD" "$protocol" "$hostname" "$port" | tr -d '\n')
-chmod +x update_profile.sh
-./update_profile.sh "$token" "$protocol" "$hostname" "$port"
-chmod +x update_currency.sh
-./update_currency.sh "$token" "$protocol" "$hostname" "$port"
-chmod +x update_timezone.sh
-./update_timezone.sh "$token" "$protocol" "$hostname" "$port"
-chmod +x update_billing.sh
-./update_billing.sh "$token" "$protocol" "$hostname" "$port"
-chmod +x update_conversionrate.sh
-./update_conversionrate.sh "$token" "$protocol" "$hostname" "$port"
-chmod +x update_category.sh
-./update_category.sh "$token" "$protocol" "$hostname" "$port"
-chmod +x update_subcategory.sh
-./update_subcategory.sh "$token" "$protocol" "$hostname" "$port"
-chmod +x update_product.sh
-./update_product.sh "$token" "$protocol" "$hostname" "$port"
-chmod +x update_tax.sh
-./update_tax.sh "$token" "$protocol" "$hostname" "$port"
+npm i @strapi/strapi@v4.22.1
