@@ -18,18 +18,13 @@ export port="1337"
 
 dependency_flag=1
 
-cd tasks
-
 if [[ $dependency_flag -eq 1 ]]; then
     if ! command -v yq &> /dev/null
     then
 		echo "Smederevo123" | sudo -S snap install yq
     fi
-	chmod +x install_dependencies.sh
-	./install_dependencies.sh
+	chmod +x tasks/install_dependencies.sh
 fi
-
-cd ..
 
 cd backend
 
@@ -103,7 +98,7 @@ chmod +x strapi_createuser.sh
 # Login strapi user
 chmod +x strapi_loginuser.sh
 token=$(./strapi_loginuser.sh "$STRAPI_USER_EMAIL" "$STRAPI_USER_PASSWORD" "$protocol" "$hostname" "$port" | tr -d '\n')
-chmod +x update_profile,sh
+chmod +x update_profile.sh
 ./update_profile.sh "$token" "$protocol" "$hostname" "$port"
 chmod +x update_currency.sh
 ./update_currency.sh "$token" "$protocol" "$hostname" "$port"
