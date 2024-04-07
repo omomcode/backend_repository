@@ -18,15 +18,19 @@ export port="1337"
 
 dependency_flag=1
 
+cd tasks
+
 if [[ $dependency_flag -eq 1 ]]; then
     if ! command -v yq &> /dev/null
     then
         echo "yq is not installed. Installing yq using snap..."
-		# echo "YourSudoPassword" | sudo -S snap install yq
-		sudo snap install yq
+		echo "Smederevo123" | sudo -S snap install yq
+		# sudo snap install yq
     fi
 	./install_dependencies.sh
 fi
+
+cd ..
 
 cd backend
 
