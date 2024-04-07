@@ -7,20 +7,22 @@ port="$4"
 
 api_url="$protocol://$hostname:$port/omcommerce"
 
-products_response=$(curl -s -H "Authorization: Bearer $token" "$api_url/product/find")
+response=$(curl -s -H "Authorization: Bearer $token" "$api_url/product/find")
+ids=($(echo "$response" | jq -r '.[].id'))
 
-products_array=$(yq eval '.data.product' storeconfig.yaml)
+json_data=$(cat storeconfig.yaml | yq e -o=json -)
+response_object=$(echo "$json_data" | jq '.data.product')
+readarray -t objects < <(jq -c '.[]' <<< "$response_object")
 
-for row in $(echo "${products_array}" | jq -c '.[]'); do
-    id=$(echo $row | jq -r '.id')
-    matching_object=$(echo $products_response | jq --arg id "$id" '.[] | select(.id == ($id | tonumber))')
-
-    if [ -z "$matching_object" ]; then
-        # Id doesn't exist, send a POST request
-        curl -X POST -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "$row" "$api_url/product/create"
-    else
-        # Id exists, update existing object with values from 'row'
-        updated_object=$(jq -n --argjson existing "$matching_object" --argjson new "$row" '$existing * $new')
-        curl -X PUT -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "$updated_object" "$api_url/product/update/$id"
-    fi
+for row in "${objects[@]}"; do
+  echo "this is a row" $row
+  row_id=$(echo "$row" | jq -r '.id')
+  json_temp=$(echo "$row" | jq -c '.')
+  json_payload=$(echo "$json_temp" | jq -c '{"data": . }')
+  echo $row_id
+  if [[ " ${ids[@]} " =~ " $row_id " ]]; then
+    curl -X PUT -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "$json_payload" "$api_url/product/update/$row_id"
+  else
+    curl -X POST -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "$json_payload" "$api_url/product/create"
+  fi
 done

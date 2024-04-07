@@ -152,11 +152,7 @@ CREATE TABLE `admin_users` (
 -- Dumping data for table `admin_users`
 --
 
-LOCK TABLES `admin_users` WRITE;
-/*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
-INSERT INTO `admin_users` VALUES (1,'Alex','M',NULL,'alexmitrovic993@gmail.com','$2a$10$ioJq7mOa.TyqE54ZQeads.FyE7rjxdOzOEn7QiHSz.w2cr/GzsV8u',NULL,NULL,1,0,NULL,'2024-04-02 13:24:53.336000','2024-04-02 13:24:53.336000',NULL,NULL);
-/*!40000 ALTER TABLE `admin_users` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `admin_users_roles_links`
