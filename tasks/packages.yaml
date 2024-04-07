@@ -1,7 +1,7 @@
 ---
 packages:
-  - echo "Smederevo123" | sudo -S apt install mariadb-server
-  - echo "Smederevo123" | sudo -S apt-get install jq
-  - echo "Smederevo123" | sudo -S apt install curl
-  - curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-  - echo "Smederevo123" | sudo -S apt-get install -y nodejs
+  - "echo 'Smederevo123' | sudo -S apt install mariadb-server"
+  - "echo 'Smederevo123' | sudo -S apt-get install jq"
+  - "echo 'Smederevo123' | sudo -S apt install curl"
+  - "curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -"
+  - "echo 'Smederevo123' | sudo -S apt-get install -y nodejs"
