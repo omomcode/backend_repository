@@ -25,6 +25,7 @@ if [[ $dependency_flag -eq 1 ]]; then
     then
 		echo "Smederevo123" | sudo -S snap install yq
     fi
+	chmod +x install_dependencies.sh
 	./install_dependencies.sh
 fi
 
