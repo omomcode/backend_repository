@@ -87,3 +87,24 @@ cd backend
 npm i
 
 npm i @strapi/strapi@v4.22.1
+
+chmod +x strapi_loginuser.sh
+token=$(./strapi_loginuser.sh "$STRAPI_USER_EMAIL" "$STRAPI_USER_PASSWORD" "$protocol" "$hostname" "$port" | tr -d '\n')
+chmod +x update_profile.sh
+./update_profile.sh "$token" "$protocol" "$hostname" "$port"
+chmod +x update_currency.sh
+./update_currency.sh "$token" "$protocol" "$hostname" "$port"
+chmod +x update_timezone.sh
+./update_timezone.sh "$token" "$protocol" "$hostname" "$port"
+chmod +x update_billing.sh
+./update_billing.sh "$token" "$protocol" "$hostname" "$port"
+chmod +x update_conversionrate.sh
+./update_conversionrate.sh "$token" "$protocol" "$hostname" "$port"
+chmod +x update_category.sh
+./update_category.sh "$token" "$protocol" "$hostname" "$port"
+chmod +x update_subcategory.sh
+./update_subcategory.sh "$token" "$protocol" "$hostname" "$port"
+chmod +x update_product.sh
+./update_product.sh "$token" "$protocol" "$hostname" "$port"
+chmod +x update_tax.sh
+./update_tax.sh "$token" "$protocol" "$hostname" "$port"
