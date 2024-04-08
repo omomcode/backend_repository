@@ -18,7 +18,7 @@ export port="1337"
 
 current_dir=$(pwd)
 
-dependency_flag=0
+dependency_flag=1
 
 if [[ $dependency_flag -eq 1 ]]; then
     if ! command -v yq &> /dev/null
@@ -75,16 +75,18 @@ chmod +x tasks/db_create_database.sh
 source tasks/db_create_database.sh "$DATABASE_USER" "$DATABASE_PASSWORD" "$DATABASE_NAME" "$DATABASE_HOST"
 
 # Import dump to newly created database
-#chmod +x tasks/db_import_dump.sh
-#source tasks/db_import_dump.sh "$DATABASE_USER" "$DATABASE_PASSWORD" "$DATABASE_NAME" "$DUMP_NAME" "$DATABASE_HOST"
+chmod +x tasks/db_import_dump.sh
+source tasks/db_import_dump.sh "$DATABASE_USER" "$DATABASE_PASSWORD" "$DATABASE_NAME" "$DUMP_NAME" "$DATABASE_HOST"
 
 cd backend
 
-#npm i @strapi/strapi@v4.15.0
-#npm i
+npm i @strapi/strapi@v4.15.0
+npm i
 
-#npm run build
+npm run build
 nohup npm run start &
+
+sleep 10
 
 cd "$current_dir"
 
