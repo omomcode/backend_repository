@@ -3,7 +3,7 @@
 # root user is the user who can grant privileges
 export DATABASE_USER="root"
 export DATABASE_PASSWORD="root"
-export DATABASE_NAME="ekomerc"
+export DATABASE_NAME="ekomerctest"
 export DUMP_NAME="ecommerce-20240402184403"
 export DATABASE_HOST="localhost"
 export DB_ROOT_USER="root"
@@ -15,6 +15,9 @@ export STRAPI_USER_PASSWORD="StrongPassword1"
 export protocol="http"
 export hostname="localhost"
 export port="1337"
+export FRONTEND_DATABASE_NAME="ecommerce_ldl_test"
+export FRONTEND_DATABASE_HOST="localhost"
+export FRONTEND_PORT="3306"
 
 current_dir=$(pwd)
 
@@ -101,6 +104,9 @@ chmod +x strapi_createuser.sh
 chmod +x strapi_loginuser.sh
 token=$(./strapi_loginuser.sh "$STRAPI_USER_EMAIL" "$STRAPI_USER_PASSWORD" "$protocol" "$hostname" "$port" | tr -d '\n')
 
+chmod +x create_frontend_token.sh
+frontend_token=$(./create_frontend_token.sh "$token" "$hostname" "$port" | tr -d '\n')
+
 check_yaml_field() {
   local field=$(yq eval "$1" storeconfig.yaml)
   if [ -n $field ]; then
@@ -146,3 +152,8 @@ if check_yaml_field '.data.tax'; then
   chmod +x update_tax.sh
   ./update_tax.sh "$token" "$protocol" "$hostname" "$port"
 fi
+
+cd "$current_dir"
+
+chmod +x run_frontend.sh
+./run_frontend.sh "frontend_token" "$hostname" "$port" "$protocol"

@@ -1,0 +1,2297 @@
+data_types:
+  - id: 1
+    type_name: "layoutdiv"
+    defaultWidth: "100%"
+    defaultHeight: ""
+    custom: null
+  - id: 2
+    type_name: "wrapper"
+    defaultWidth: "100%"
+    defaultHeight: ""
+    custom: "display: flex;"
+  - id: 3
+    type_name: "page"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 4
+    type_name: "header"
+    defaultWidth: "100%"
+    defaultHeight: null
+    custom: "display: flex;"
+  - id: 5
+    type_name: "footer"
+    defaultWidth: "100%"
+    defaultHeight: null
+    custom: null
+  - id: 6
+    type_name: "carousel"
+    defaultWidth: "600px"
+    defaultHeight: null
+    custom: "display: flex;"
+  - id: 7
+    type_name: "cardlist"
+    defaultWidth: "100%"
+    defaultHeight: null
+    custom: "display: flex;"
+  - id: 8
+    type_name: "card"
+    defaultWidth: null
+    defaultHeight: "200px"
+    custom: null
+  - id: 9
+    type_name: "searchbar"
+    defaultWidth: "400px"
+    defaultHeight: null
+    custom: null
+  - id: 10
+    type_name: "textwithimage"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 11
+    type_name: "text"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 12
+    type_name: "image"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 13
+    type_name: "icon"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 14
+    type_name: "button"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 15
+    type_name: "list"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 16
+    type_name: "social"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 17
+    type_name: "title"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 18
+    type_name: "customlink"
+    defaultWidth: null
+    defaultHeight: null
+    custom: "text-decoration: none;"
+  - id: 19
+    type_name: "cart"
+    defaultWidth: null
+    defaultHeight: null
+    custom: "font-size: 30px;"
+  - id: 20
+    type_name: "filter"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 21
+    type_name: "paypal"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+  - id: 22
+    type_name: "span"
+    defaultWidth: null
+    defaultHeight: null
+    custom: null
+layout:
+  - col_from: null
+    col_to: null
+    custom_style: color:black;
+    id: 200
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 201
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 202
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 203
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 204
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 205
+    row_from: null
+    row_to: null
+  - col_from: 1
+    col_to: 13
+    custom_style: 'NULL'
+    id: 206
+    row_from: 1
+    row_to: 2
+  - col_from: 1
+    col_to: 13
+    custom_style: 'NULL'
+    id: 207
+    row_from: 2
+    row_to: 3
+  - col_from: 1
+    col_to: 13
+    custom_style: 'NULL'
+    id: 208
+    row_from: 3
+    row_to: 4
+  - col_from: 1
+    col_to: 13
+    custom_style: overflow:hidden;
+    id: 209
+    row_from: 4
+    row_to: 5
+  - col_from: 1
+    col_to: 13
+    custom_style: 'NULL'
+    id: 210
+    row_from: 5
+    row_to: 6
+  - col_from: 1
+    col_to: 13
+    custom_style: 'NULL'
+    id: 211
+    row_from: 6
+    row_to: 7
+  - col_from: 1
+    col_to: 13
+    custom_style: 'NULL'
+    id: 212
+    row_from: 7
+    row_to: 8
+  - col_from: 1
+    col_to: 13
+    custom_style: 'NULL'
+    id: 216
+    row_from: 8
+    row_to: 9
+  - col_from: null
+    col_to: null
+    custom_style: 'background-color: #e6cfc5;justify-content: space-between;'
+    id: 217
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: ''
+    id: 218
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: width:1em;height:1em;
+    id: 219
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: ''
+    id: 220
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'background-color: whitesmoke;justify-content:center;align-items:center;text-align:center;border-bottom:
+    2px solid #e6cfc5;margin:0 10px;'
+    id: 221
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: font-size:6em;
+    id: 222
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'background-color: whitesmoke;justify-content:center;align-items:center;'
+    id: 223
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'background-color: whitesmoke;text-align:center;padding-left:10px;padding-right:10px;'
+    id: 224
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'background-color: whitesmoke;text-align:center;padding-left:10px;padding-right:10px;'
+    id: 225
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'background-color: whitesmoke;text-align:center;padding-left:10px;padding-right:10px;'
+    id: 226
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: ''
+    id: 227
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: ''
+    id: 228
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: ''
+    id: 229
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: font-size:1.8em;
+    id: 230
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: font-size:1.8em;
+    id: 231
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: font-size:1.8em;
+    id: 232
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: width:100%;height:100%;
+    id: 233
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'background-color: #f4eee2;border-bottom: 2px solid #e6cfc5;justify-content:
+    center;'
+    id: 234
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: font-size:6em;
+    id: 235
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'margin: 10px;justify-content: space-between;gap: 1%;flex-flow: row
+    wrap;border-top: 2px solid #e6cfc5;'
+    id: 236
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'flex-basis: 24%;height: 400px;padding-top: 50px;overflow: hidden;'
+    id: 237
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'flex-basis: 24%;height: 400px;padding-top: 50px;overflow: hidden;'
+    id: 238
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'flex-basis: 24%;height: 400px;padding-top: 50px;overflow: hidden;'
+    id: 239
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'flex-basis: 24%;height: 400px;padding-top: 50px;overflow: hidden;'
+    id: 240
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'justify-content: center;flex-basis: 100%;padding-bottom: 50px;border-bottom:
+    2px solid #e6cfc5;'
+    id: 241
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 242
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: width:100%;height:100%;
+    id: 243
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 244
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: width:100%;height:100%;
+    id: 245
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 246
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: width:100%;height:100%;
+    id: 247
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 248
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: width:100%;height:100%;
+    id: 249
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 250
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'background-color: #e6cfc5;border-radius: 10px;padding: 10px 20px;cursor:
+    pointer;'
+    id: 251
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: font-size:16px;
+    id: 252
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'padding-bottom: 50px;padding-top: 50px;margin: 10px;justify-content:
+    center;gap: 10px;'
+    id: 253
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'height: 500px;position: relative;overflow: hidden;width: 70%;justify-content:
+    center;'
+    id: 254
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'width:100%;height:100%;flex: 1;object-fit: cover;'
+    id: 255
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'position: absolute;width: 70%;padding: 10px;bottom: 0;right: 0;top:
+    0;left: 0;margin: auto;height: 80%;text-align: center;background-color: #f4eee1;font-family:
+    Tahoma'
+    id: 256
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: font-size:1.8em;
+    id: 257
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'margin: 10px;padding-left: 20px;padding-right: 20px;padding-bottom:
+    20px;padding-top:50px;gap: 1%;justify-content: space-between;border-top: 12px
+    solid #e6cfc5;border-bottom: 12px solid #e6cfc5;flex-wrap: wrap;flex-direction:
+    row;'
+    id: 258
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'width: 100%;padding-bottom: 10px;justify-content: center;padding-top:
+    20px;'
+    id: 259
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'height:400px!important;width:400px!important;overflow: hidden;border:
+    10px solid #e6cfc5;'
+    id: 260
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'height:400px!important;width:400px!important;overflow: hidden;border:
+    10px solid #e6cfc5;'
+    id: 261
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'height:400px!important;width:400px!important;overflow: hidden;border:
+    10px solid #e6cfc5;'
+    id: 262
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'height:400px!important;width:400px!important;overflow: hidden;border:
+    10px solid #e6cfc5;'
+    id: 263
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'width: fit-content;padding-bottom: 10px;flex-basis: 100%;justify-content:
+    center;padding-top: 20px;'
+    id: 264
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'text-align: left;font-weight: 700;flex-basis: 46.66%;'
+    id: 265
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'flex-basis: 43.33% !important;'
+    id: 266
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em;'
+    id: 267
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'object-position: center;object-fit:cover;width:100%;height:100%;'
+    id: 268
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 269
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'object-position: center;width:100%;height:100%;'
+    id: 270
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 271
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'object-position: center;width:100%;height:100%;'
+    id: 272
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 273
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'object-position: center;width:100%;height:100%;'
+    id: 274
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 275
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'object-position: center;width:100%;height:100%;'
+    id: 276
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 277
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'padding: 10px 20px;border-radius: 10px;background-color: #e6cfc5;cursor:
+    pointer;'
+    id: 278
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: font-size:1em;
+    id: 279
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'margin: 100px 0 0;background-color: #ffcdb7;flex-direction: column;'
+    id: 280
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'justify-content: space-around;flex-wrap: wrap;gap: 30px;padding-left:
+    100px;padding-top: 50px;margin-right: 100px;'
+    id: 281
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'align-items: center;padding-right: 50px;padding-left: 50px;margin-top:
+    50px;justify-content: space-between;flex-wrap: wrap;'
+    id: 282
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'flex: 1;flex-direction: column;text-align: center;margin-bottom:
+    18.224px;'
+    id: 283
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'flex: 1;flex-direction: column;text-align: center;margin-bottom:
+    18.224px;'
+    id: 284
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'flex: 1;flex-direction: column;text-align: center;margin-bottom:
+    18.224px;'
+    id: 285
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'align-items: center;'
+    id: 286
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 287
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.7em;font-weight: 500;'
+    id: 288
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 289
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 290
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.7em;font-weight: 500;'
+    id: 291
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 292
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 293
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 294
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 295
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 296
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.7em;font-weight: 500;'
+    id: 297
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 298
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 299
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2000
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2001
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2002
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'color: #28c5a4;font-weight: 700;font-size: 44px;'
+    id: 2003
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'margin-left: 20px;font-size: 20px;'
+    id: 2004
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'width: 100%;object-fit: contain;'
+    id: 2005
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2006
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2007
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2008
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2009
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2010
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2011
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'font-size: 1.5em !important;'
+    id: 2012
+    row_from: null
+    row_to: null
+  - col_from: null
+    col_to: null
+    custom_style: 'NULL'
+    id: 2013
+    row_from: null
+    row_to: null
+logic:
+  - id: 400
+    resolvable: 603
+    tags: null
+  - id: 401
+    resolvable: 603
+    tags: null
+  - id: 402
+    resolvable: 603
+    tags: null
+  - id: 403
+    resolvable: 603
+    tags: null
+  - id: 404
+    resolvable: 603
+    tags: null
+  - id: 405
+    resolvable: 603
+    tags: null
+  - id: 406
+    resolvable: 601
+    tags: null
+  - id: 407
+    resolvable: 601
+    tags: null
+  - id: 408
+    resolvable: 601
+    tags: null
+  - id: 409
+    resolvable: 601
+    tags: null
+  - id: 410
+    resolvable: 601
+    tags: null
+  - id: 411
+    resolvable: 601
+    tags: null
+  - id: 412
+    resolvable: 601
+    tags: null
+  - id: 416
+    resolvable: 601
+    tags: null
+  - id: 417
+    resolvable: 604
+    tags: null
+  - id: 418
+    resolvable: 618
+    tags: null
+  - id: 419
+    resolvable: 619
+    tags: null
+  - id: 420
+    resolvable: 611
+    tags: null
+  - id: 421
+    resolvable: 602
+    tags: null
+  - id: 422
+    resolvable: 617
+    tags: null
+  - id: 423
+    resolvable: 602
+    tags: null
+  - id: 424
+    resolvable: 602
+    tags: null
+  - id: 425
+    resolvable: 602
+    tags: null
+  - id: 426
+    resolvable: 602
+    tags: null
+  - id: 427
+    resolvable: 618
+    tags: null
+  - id: 428
+    resolvable: 618
+    tags: null
+  - id: 429
+    resolvable: 618
+    tags: null
+  - id: 430
+    resolvable: 611
+    tags: null
+  - id: 431
+    resolvable: 611
+    tags: null
+  - id: 432
+    resolvable: 611
+    tags: null
+  - id: 433
+    resolvable: 612
+    tags: null
+  - id: 434
+    resolvable: 602
+    tags: null
+  - id: 435
+    resolvable: 617
+    tags: null
+  - id: 436
+    resolvable: 602
+    tags: null
+  - id: 437
+    resolvable: 602
+    tags: null
+  - id: 438
+    resolvable: 602
+    tags: null
+  - id: 439
+    resolvable: 602
+    tags: null
+  - id: 440
+    resolvable: 602
+    tags: null
+  - id: 441
+    resolvable: 602
+    tags: null
+  - id: 442
+    resolvable: 618
+    tags: null
+  - id: 443
+    resolvable: 612
+    tags: null
+  - id: 444
+    resolvable: 618
+    tags: null
+  - id: 445
+    resolvable: 612
+    tags: null
+  - id: 446
+    resolvable: 618
+    tags: null
+  - id: 447
+    resolvable: 612
+    tags: null
+  - id: 448
+    resolvable: 618
+    tags: null
+  - id: 449
+    resolvable: 612
+    tags: null
+  - id: 450
+    resolvable: 618
+    tags: null
+  - id: 451
+    resolvable: 614
+    tags: null
+  - id: 452
+    resolvable: 611
+    tags: null
+  - id: 453
+    resolvable: 602
+    tags: null
+  - id: 454
+    resolvable: 602
+    tags: null
+  - id: 455
+    resolvable: 612
+    tags: null
+  - id: 456
+    resolvable: 602
+    tags: null
+  - id: 457
+    resolvable: 611
+    tags: null
+  - id: 458
+    resolvable: 602
+    tags: null
+  - id: 459
+    resolvable: 602
+    tags: null
+  - id: 460
+    resolvable: 602
+    tags: null
+  - id: 461
+    resolvable: 602
+    tags: null
+  - id: 462
+    resolvable: 602
+    tags: null
+  - id: 463
+    resolvable: 602
+    tags: null
+  - id: 464
+    resolvable: 602
+    tags: null
+  - id: 465
+    resolvable: 602
+    tags: null
+  - id: 466
+    resolvable: 602
+    tags: null
+  - id: 467
+    resolvable: 617
+    tags: null
+  - id: 468
+    resolvable: 612
+    tags: null
+  - id: 469
+    resolvable: 618
+    tags: null
+  - id: 470
+    resolvable: 612
+    tags: null
+  - id: 471
+    resolvable: 618
+    tags: null
+  - id: 472
+    resolvable: 612
+    tags: null
+  - id: 473
+    resolvable: 618
+    tags: null
+  - id: 474
+    resolvable: 612
+    tags: null
+  - id: 475
+    resolvable: 618
+    tags: null
+  - id: 476
+    resolvable: 612
+    tags: null
+  - id: 477
+    resolvable: 618
+    tags: null
+  - id: 478
+    resolvable: 614
+    tags: null
+  - id: 479
+    resolvable: 611
+    tags: null
+  - id: 480
+    resolvable: 605
+    tags: null
+  - id: 481
+    resolvable: 602
+    tags: null
+  - id: 482
+    resolvable: 602
+    tags: null
+  - id: 483
+    resolvable: 602
+    tags: null
+  - id: 484
+    resolvable: 602
+    tags: null
+  - id: 485
+    resolvable: 602
+    tags: null
+  - id: 486
+    resolvable: 602
+    tags: null
+  - id: 487
+    resolvable: 602
+    tags: null
+  - id: 488
+    resolvable: 617
+    tags: null
+  - id: 489
+    resolvable: 618
+    tags: null
+  - id: 490
+    resolvable: 618
+    tags: null
+  - id: 491
+    resolvable: 617
+    tags: null
+  - id: 492
+    resolvable: 618
+    tags: null
+  - id: 493
+    resolvable: 618
+    tags: null
+  - id: 494
+    resolvable: 618
+    tags: null
+  - id: 495
+    resolvable: 618
+    tags: null
+  - id: 496
+    resolvable: 618
+    tags: null
+  - id: 497
+    resolvable: 617
+    tags: null
+  - id: 498
+    resolvable: 622
+    tags: null
+  - id: 499
+    resolvable: 622
+    tags: null
+  - id: 4000
+    resolvable: 622
+    tags: null
+  - id: 4001
+    resolvable: 622
+    tags: null
+  - id: 4002
+    resolvable: 622
+    tags: null
+  - id: 4003
+    resolvable: 622
+    tags: null
+  - id: 4004
+    resolvable: 622
+    tags: null
+  - id: 4005
+    resolvable: 612
+    tags: null
+  - id: 4006
+    resolvable: 611
+    tags: null
+  - id: 4007
+    resolvable: 611
+    tags: null
+  - id: 4008
+    resolvable: 611
+    tags: null
+  - id: 4009
+    resolvable: 611
+    tags: null
+  - id: 4010
+    resolvable: 611
+    tags: null
+  - id: 4011
+    resolvable: 611
+    tags: null
+  - id: 4012
+    resolvable: 611
+    tags: null
+  - id: 4013
+    resolvable: 616
+    tags: null
+o_data_table_data:
+  - id: 300
+    relations: '["3", "500"]'
+  - id: 301
+    relations: 'NULL'
+  - id: 302
+    relations: 'NULL'
+  - id: 303
+    relations: 'NULL'
+  - id: 304
+    relations: 'NULL'
+  - id: 305
+    relations: 'NULL'
+  - id: 306
+    relations: '["1", "506"]'
+  - id: 307
+    relations: '["1", "507"]'
+  - id: 308
+    relations: '["1", "508"]'
+  - id: 309
+    relations: '["1", "509"]'
+  - id: 310
+    relations: '["1", "510"]'
+  - id: 311
+    relations: '["1", "511"]'
+  - id: 312
+    relations: '["1", "512"]'
+  - id: 316
+    relations: '["1", "516"]'
+  - id: 317
+    relations: '["4", "517"]'
+  - id: 318
+    relations: '["18", "518"]'
+  - id: 319
+    relations: '["19", "519"]'
+  - id: 320
+    relations: '["11", "520"]'
+  - id: 321
+    relations: '["2", "521"]'
+  - id: 322
+    relations: '["17", "522"]'
+  - id: 323
+    relations: '["2", "523"]'
+  - id: 324
+    relations: '["2", "524"]'
+  - id: 325
+    relations: '["2", "525"]'
+  - id: 326
+    relations: '["2", "526"]'
+  - id: 327
+    relations: '["18", "527"]'
+  - id: 328
+    relations: '["18", "528"]'
+  - id: 329
+    relations: '["18", "529"]'
+  - id: 330
+    relations: '["11", "530"]'
+  - id: 331
+    relations: '["11", "531"]'
+  - id: 332
+    relations: '["11", "532"]'
+  - id: 333
+    relations: '["12", "533"]'
+  - id: 334
+    relations: '["2", "534"]'
+  - id: 335
+    relations: '["17", "535"]'
+  - id: 336
+    relations: '["2", "536"]'
+  - id: 337
+    relations: '["2", "537"]'
+  - id: 338
+    relations: '["2", "538"]'
+  - id: 339
+    relations: '["2", "539"]'
+  - id: 340
+    relations: '["2", "540"]'
+  - id: 341
+    relations: '["2", "541"]'
+  - id: 342
+    relations: '["18", "542"]'
+  - id: 343
+    relations: '["12", "543"]'
+  - id: 344
+    relations: '["18", "544"]'
+  - id: 345
+    relations: '["12", "545"]'
+  - id: 346
+    relations: '["18", "546"]'
+  - id: 347
+    relations: '["12", "547"]'
+  - id: 348
+    relations: '["18", "548"]'
+  - id: 349
+    relations: '["12", "549"]'
+  - id: 350
+    relations: '["18", "550"]'
+  - id: 351
+    relations: '["14", "551"]'
+  - id: 352
+    relations: '["11", "552"]'
+  - id: 353
+    relations: '["2", "553"]'
+  - id: 354
+    relations: '["2", "554"]'
+  - id: 355
+    relations: '["12", "555"]'
+  - id: 356
+    relations: '["2", "556"]'
+  - id: 357
+    relations: '["11", "557"]'
+  - id: 358
+    relations: '["2", "558"]'
+  - id: 359
+    relations: '["2", "559"]'
+  - id: 360
+    relations: '["2", "560"]'
+  - id: 361
+    relations: '["2", "561"]'
+  - id: 362
+    relations: '["2", "562"]'
+  - id: 363
+    relations: '["2", "563"]'
+  - id: 364
+    relations: '["2", "564"]'
+  - id: 365
+    relations: '["2", "565"]'
+  - id: 366
+    relations: '["2", "566"]'
+  - id: 367
+    relations: '["17", "567"]'
+  - id: 368
+    relations: '["12", "568"]'
+  - id: 369
+    relations: '["18", "569"]'
+  - id: 370
+    relations: '["12", "570"]'
+  - id: 371
+    relations: '["18", "571"]'
+  - id: 372
+    relations: '["12", "572"]'
+  - id: 373
+    relations: '["18", "573"]'
+  - id: 374
+    relations: '["12", "574"]'
+  - id: 375
+    relations: '["18", "575"]'
+  - id: 376
+    relations: '["12", "576"]'
+  - id: 377
+    relations: '["18", "577"]'
+  - id: 378
+    relations: '["14", "578"]'
+  - id: 379
+    relations: '["11", "579"]'
+  - id: 380
+    relations: '["5", "580"]'
+  - id: 381
+    relations: '["2", "581"]'
+  - id: 382
+    relations: '["2", "582"]'
+  - id: 383
+    relations: '["2", "583"]'
+  - id: 384
+    relations: '["2", "584"]'
+  - id: 385
+    relations: '["2", "585"]'
+  - id: 386
+    relations: '["2", "586"]'
+  - id: 387
+    relations: '["2", "587"]'
+  - id: 388
+    relations: '["17", "588"]'
+  - id: 389
+    relations: '["18", "589"]'
+  - id: 390
+    relations: '["18", "590"]'
+  - id: 391
+    relations: '["17", "591"]'
+  - id: 392
+    relations: '["18", "592"]'
+  - id: 393
+    relations: '["18", "593"]'
+  - id: 394
+    relations: '["18", "594"]'
+  - id: 395
+    relations: '["18", "595"]'
+  - id: 396
+    relations: '["18", "596"]'
+  - id: 397
+    relations: '["17", "597"]'
+  - id: 398
+    relations: '["22", "598"]'
+  - id: 399
+    relations: '["22", "599"]'
+  - id: 3000
+    relations: '["22", "5000"]'
+  - id: 3001
+    relations: '["22", "5001"]'
+  - id: 3002
+    relations: '["22", "5002"]'
+  - id: 3003
+    relations: '["22", "5003"]'
+  - id: 3004
+    relations: '["22", "5004"]'
+  - id: 3005
+    relations: '["12", "5005"]'
+  - id: 3006
+    relations: '["11", "5006"]'
+  - id: 3007
+    relations: '["11", "5007"]'
+  - id: 3008
+    relations: '["11", "5008"]'
+  - id: 3009
+    relations: '["11", "5009"]'
+  - id: 3010
+    relations: '["11", "5010"]'
+  - id: 3011
+    relations: '["11", "5011"]'
+  - id: 3012
+    relations: '["11", "5012"]'
+  - id: 3013
+    relations: '["16", "5013"]'
+objects:
+  - children: '["106", "107", "108", "109", "110", "111", "112", "116"]'
+    layout: 200
+    logic: 400
+    o_data: 300
+    uuid: 100
+  - children: 'NULL'
+    layout: 201
+    logic: 401
+    o_data: 301
+    uuid: 101
+  - children: 'NULL'
+    layout: 202
+    logic: 402
+    o_data: 302
+    uuid: 102
+  - children: 'NULL'
+    layout: 203
+    logic: 403
+    o_data: 303
+    uuid: 103
+  - children: 'NULL'
+    layout: 204
+    logic: 404
+    o_data: 304
+    uuid: 104
+  - children: 'NULL'
+    layout: 205
+    logic: 405
+    o_data: 305
+    uuid: 105
+  - children: '["117"]'
+    layout: 206
+    logic: 406
+    o_data: 306
+    uuid: 106
+  - children: '["121"]'
+    layout: 207
+    logic: 407
+    o_data: 307
+    uuid: 107
+  - children: '["123"]'
+    layout: 208
+    logic: 408
+    o_data: 308
+    uuid: 108
+  - children: '["133"]'
+    layout: 209
+    logic: 409
+    o_data: 309
+    uuid: 109
+  - children: '["134"]'
+    layout: 210
+    logic: 410
+    o_data: 310
+    uuid: 110
+  - children: '["153"]'
+    layout: 211
+    logic: 411
+    o_data: 311
+    uuid: 111
+  - children: '["158"]'
+    layout: 212
+    logic: 412
+    o_data: 312
+    uuid: 112
+  - children: '["180"]'
+    layout: 216
+    logic: 416
+    o_data: 316
+    uuid: 116
+  - children: '["118", "119"]'
+    layout: 217
+    logic: 417
+    o_data: 317
+    uuid: 117
+  - children: '["120"]'
+    layout: 218
+    logic: 418
+    o_data: 318
+    uuid: 118
+  - children: 'NULL'
+    layout: 219
+    logic: 419
+    o_data: 319
+    uuid: 119
+  - children: 'NULL'
+    layout: 220
+    logic: 420
+    o_data: 320
+    uuid: 120
+  - children: '["122"]'
+    layout: 221
+    logic: 421
+    o_data: 321
+    uuid: 121
+  - children: 'NULL'
+    layout: 222
+    logic: 422
+    o_data: 322
+    uuid: 122
+  - children: '["124", "125", "126"]'
+    layout: 223
+    logic: 423
+    o_data: 323
+    uuid: 123
+  - children: '["127"]'
+    layout: 224
+    logic: 424
+    o_data: 324
+    uuid: 124
+  - children: '["128"]'
+    layout: 225
+    logic: 425
+    o_data: 325
+    uuid: 125
+  - children: '["129"]'
+    layout: 226
+    logic: 426
+    o_data: 326
+    uuid: 126
+  - children: '["130"]'
+    layout: 227
+    logic: 427
+    o_data: 327
+    uuid: 127
+  - children: '["131"]'
+    layout: 228
+    logic: 428
+    o_data: 328
+    uuid: 128
+  - children: '["132"]'
+    layout: 229
+    logic: 429
+    o_data: 329
+    uuid: 129
+  - children: 'NULL'
+    layout: 230
+    logic: 430
+    o_data: 330
+    uuid: 130
+  - children: 'NULL'
+    layout: 231
+    logic: 431
+    o_data: 331
+    uuid: 131
+  - children: 'NULL'
+    layout: 232
+    logic: 432
+    o_data: 332
+    uuid: 132
+  - children: 'NULL'
+    layout: 233
+    logic: 433
+    o_data: 333
+    uuid: 133
+  - children: '["135"]'
+    layout: 234
+    logic: 434
+    o_data: 334
+    uuid: 134
+  - children: 'NULL'
+    layout: 235
+    logic: 435
+    o_data: 335
+    uuid: 135
+  - children: '["137", "138", "139", "140", "141"]'
+    layout: 236
+    logic: 436
+    o_data: 336
+    uuid: 136
+  - children: '["142"]'
+    layout: 237
+    logic: 437
+    o_data: 337
+    uuid: 137
+  - children: '["144"]'
+    layout: 238
+    logic: 438
+    o_data: 338
+    uuid: 138
+  - children: '["146"]'
+    layout: 239
+    logic: 439
+    o_data: 339
+    uuid: 139
+  - children: '["148"]'
+    layout: 240
+    logic: 440
+    o_data: 340
+    uuid: 140
+  - children: '["150"]'
+    layout: 241
+    logic: 441
+    o_data: 341
+    uuid: 141
+  - children: '["143"]'
+    layout: 242
+    logic: 442
+    o_data: 342
+    uuid: 142
+  - children: 'NULL'
+    layout: 243
+    logic: 443
+    o_data: 343
+    uuid: 143
+  - children: '["145"]'
+    layout: 244
+    logic: 444
+    o_data: 344
+    uuid: 144
+  - children: 'NULL'
+    layout: 245
+    logic: 445
+    o_data: 345
+    uuid: 145
+  - children: '["147"]'
+    layout: 246
+    logic: 446
+    o_data: 346
+    uuid: 146
+  - children: 'NULL'
+    layout: 247
+    logic: 447
+    o_data: 347
+    uuid: 147
+  - children: '["149"]'
+    layout: 248
+    logic: 448
+    o_data: 348
+    uuid: 148
+  - children: 'NULL'
+    layout: 249
+    logic: 449
+    o_data: 349
+    uuid: 149
+  - children: '["151"]'
+    layout: 250
+    logic: 450
+    o_data: 350
+    uuid: 150
+  - children: '["152"]'
+    layout: 251
+    logic: 451
+    o_data: 351
+    uuid: 151
+  - children: 'NULL'
+    layout: 252
+    logic: 452
+    o_data: 352
+    uuid: 152
+  - children: '["154"]'
+    layout: 253
+    logic: 453
+    o_data: 353
+    uuid: 153
+  - children: '["155", "156"]'
+    layout: 254
+    logic: 454
+    o_data: 354
+    uuid: 154
+  - children: 'NULL'
+    layout: 255
+    logic: 455
+    o_data: 355
+    uuid: 155
+  - children: '["157"]'
+    layout: 256
+    logic: 456
+    o_data: 356
+    uuid: 156
+  - children: 'NULL'
+    layout: 257
+    logic: 457
+    o_data: 357
+    uuid: 157
+  - children: '["159", "160", "161", "162", "163", "164"]'
+    layout: 258
+    logic: 458
+    o_data: 358
+    uuid: 158
+  - children: '["165", "166"]'
+    layout: 259
+    logic: 459
+    o_data: 359
+    uuid: 159
+  - children: '["169"]'
+    layout: 260
+    logic: 460
+    o_data: 360
+    uuid: 160
+  - children: '["171"]'
+    layout: 261
+    logic: 461
+    o_data: 361
+    uuid: 161
+  - children: '["173"]'
+    layout: 262
+    logic: 462
+    o_data: 362
+    uuid: 162
+  - children: '["175"]'
+    layout: 263
+    logic: 463
+    o_data: 363
+    uuid: 163
+  - children: '["177"]'
+    layout: 264
+    logic: 464
+    o_data: 364
+    uuid: 164
+  - children: '["167"]'
+    layout: 265
+    logic: 465
+    o_data: 365
+    uuid: 165
+  - children: '["168"]'
+    layout: 266
+    logic: 466
+    o_data: 366
+    uuid: 166
+  - children: 'NULL'
+    layout: 267
+    logic: 467
+    o_data: 367
+    uuid: 167
+  - children: 'NULL'
+    layout: 268
+    logic: 468
+    o_data: 368
+    uuid: 168
+  - children: '["170"]'
+    layout: 269
+    logic: 469
+    o_data: 369
+    uuid: 169
+  - children: 'NULL'
+    layout: 270
+    logic: 470
+    o_data: 370
+    uuid: 170
+  - children: '["172"]'
+    layout: 271
+    logic: 471
+    o_data: 371
+    uuid: 171
+  - children: 'NULL'
+    layout: 272
+    logic: 472
+    o_data: 372
+    uuid: 172
+  - children: '["174"]'
+    layout: 273
+    logic: 473
+    o_data: 373
+    uuid: 173
+  - children: 'NULL'
+    layout: 274
+    logic: 474
+    o_data: 374
+    uuid: 174
+  - children: '["176"]'
+    layout: 275
+    logic: 475
+    o_data: 375
+    uuid: 175
+  - children: 'NULL'
+    layout: 276
+    logic: 476
+    o_data: 376
+    uuid: 176
+  - children: '["178"]'
+    layout: 277
+    logic: 477
+    o_data: 377
+    uuid: 177
+  - children: '["179"]'
+    layout: 278
+    logic: 478
+    o_data: 378
+    uuid: 178
+  - children: 'NULL'
+    layout: 279
+    logic: 479
+    o_data: 379
+    uuid: 179
+  - children: '["181", "182"]'
+    layout: 280
+    logic: 480
+    o_data: 380
+    uuid: 180
+  - children: '["183", "184", "185"]'
+    layout: 281
+    logic: 481
+    o_data: 381
+    uuid: 181
+  - children: '["186", "187"]'
+    layout: 282
+    logic: 482
+    o_data: 382
+    uuid: 182
+  - children: '["188", "189", "190", "1013"]'
+    layout: 283
+    logic: 483
+    o_data: 383
+    uuid: 183
+  - children: '["191", "192", "193", "194", "195", "196"]'
+    layout: 284
+    logic: 484
+    o_data: 384
+    uuid: 184
+  - children: '["197", "198", "199", "1000", "1001", "1002"]'
+    layout: 285
+    logic: 485
+    o_data: 385
+    uuid: 185
+  - children: '["1003", "1004"]'
+    layout: 286
+    logic: 486
+    o_data: 386
+    uuid: 186
+  - children: '["1005"]'
+    layout: 287
+    logic: 487
+    o_data: 387
+    uuid: 187
+  - children: 'NULL'
+    layout: 288
+    logic: 488
+    o_data: 388
+    uuid: 188
+  - children: '["1006"]'
+    layout: 289
+    logic: 489
+    o_data: 389
+    uuid: 189
+  - children: '["1007"]'
+    layout: 290
+    logic: 490
+    o_data: 390
+    uuid: 190
+  - children: 'NULL'
+    layout: 291
+    logic: 491
+    o_data: 391
+    uuid: 191
+  - children: '["1008"]'
+    layout: 292
+    logic: 492
+    o_data: 392
+    uuid: 192
+  - children: '["1009"]'
+    layout: 293
+    logic: 493
+    o_data: 393
+    uuid: 193
+  - children: '["1010"]'
+    layout: 294
+    logic: 494
+    o_data: 394
+    uuid: 194
+  - children: '["1011"]'
+    layout: 295
+    logic: 495
+    o_data: 395
+    uuid: 195
+  - children: '["1012"]'
+    layout: 296
+    logic: 496
+    o_data: 396
+    uuid: 196
+  - children: 'NULL'
+    layout: 297
+    logic: 497
+    o_data: 397
+    uuid: 197
+  - children: 'NULL'
+    layout: 298
+    logic: 498
+    o_data: 398
+    uuid: 198
+  - children: 'NULL'
+    layout: 299
+    logic: 499
+    o_data: 399
+    uuid: 199
+  - children: 'NULL'
+    layout: 2000
+    logic: 4000
+    o_data: 3000
+    uuid: 1000
+  - children: 'NULL'
+    layout: 2001
+    logic: 4001
+    o_data: 3001
+    uuid: 1001
+  - children: 'NULL'
+    layout: 2002
+    logic: 4002
+    o_data: 3002
+    uuid: 1002
+  - children: 'NULL'
+    layout: 2003
+    logic: 4003
+    o_data: 3003
+    uuid: 1003
+  - children: 'NULL'
+    layout: 2004
+    logic: 4004
+    o_data: 3004
+    uuid: 1004
+  - children: 'NULL'
+    layout: 2005
+    logic: 4005
+    o_data: 3005
+    uuid: 1005
+  - children: 'NULL'
+    layout: 2006
+    logic: 4006
+    o_data: 3006
+    uuid: 1006
+  - children: 'NULL'
+    layout: 2007
+    logic: 4007
+    o_data: 3007
+    uuid: 1007
+  - children: 'NULL'
+    layout: 2008
+    logic: 4008
+    o_data: 3008
+    uuid: 1008
+  - children: 'NULL'
+    layout: 2009
+    logic: 4009
+    o_data: 3009
+    uuid: 1009
+  - children: 'NULL'
+    layout: 2010
+    logic: 4010
+    o_data: 3010
+    uuid: 1010
+  - children: 'NULL'
+    layout: 2011
+    logic: 4011
+    o_data: 3011
+    uuid: 1011
+  - children: 'NULL'
+    layout: 2012
+    logic: 4012
+    o_data: 3012
+    uuid: 1012
+  - children: 'NULL'
+    layout: 2013
+    logic: 4013
+    o_data: 3013
+    uuid: 1013
+resolvable_tags:
+  - id: 601
+    t_name: LayoutDiv
+  - id: 602
+    t_name: Wrapper
+  - id: 603
+    t_name: Page
+  - id: 604
+    t_name: Header
+  - id: 605
+    t_name: Footer
+  - id: 606
+    t_name: Carousel
+  - id: 607
+    t_name: CardList
+  - id: 608
+    t_name: Card
+  - id: 609
+    t_name: SearchBar
+  - id: 610
+    t_name: TextWithImage
+  - id: 611
+    t_name: Text
+  - id: 612
+    t_name: Image
+  - id: 613
+    t_name: Icon
+  - id: 614
+    t_name: Button
+  - id: 615
+    t_name: List
+  - id: 616
+    t_name: Social
+  - id: 617
+    t_name: Title
+  - id: 618
+    t_name: CustomLink
+  - id: 619
+    t_name: Cart
+  - id: 620
+    t_name: Filter
+  - id: 621
+    t_name: PaypalComponent
+  - id: 622
+    t_name: Span
+resolved_data:
+  - d_type: 3
+    id: 500
+    o_data: /
+  - d_type: 3
+    id: 501
+    o_data: /products
+  - d_type: 3
+    id: 502
+    o_data: 'NULL'
+  - d_type: 3
+    id: 503
+    o_data: 'NULL'
+  - d_type: 3
+    id: 504
+    o_data: 'NULL'
+  - d_type: 3
+    id: 505
+    o_data: 'NULL'
+  - d_type: 1
+    id: 506
+    o_data: 'NULL'
+  - d_type: 1
+    id: 507
+    o_data: 'NULL'
+  - d_type: 1
+    id: 508
+    o_data: 'NULL'
+  - d_type: 1
+    id: 509
+    o_data: 'NULL'
+  - d_type: 1
+    id: 510
+    o_data: 'NULL'
+  - d_type: 1
+    id: 511
+    o_data: 'NULL'
+  - d_type: 1
+    id: 512
+    o_data: 'NULL'
+  - d_type: 1
+    id: 516
+    o_data: 'NULL'
+  - d_type: 4
+    id: 517
+    o_data: 'NULL'
+  - d_type: 18
+    id: 518
+    o_data: /
+  - d_type: 19
+    id: 519
+    o_data: 'NULL'
+  - d_type: 11
+    id: 520
+    o_data: POCETAK
+  - d_type: 2
+    id: 521
+    o_data: ''
+  - d_type: 17
+    id: 522
+    o_data: Petunija
+  - d_type: 2
+    id: 523
+    o_data: 'NULL'
+  - d_type: 2
+    id: 524
+    o_data: 'NULL'
+  - d_type: 2
+    id: 525
+    o_data: 'NULL'
+  - d_type: 2
+    id: 526
+    o_data: 'NULL'
+  - d_type: 18
+    id: 527
+    o_data: /products
+  - d_type: 18
+    id: 528
+    o_data: /categories/limited
+  - d_type: 18
+    id: 529
+    o_data: /categories/Planer
+  - d_type: 11
+    id: 530
+    o_data: Proizvodi
+  - d_type: 11
+    id: 531
+    o_data: U Boji
+  - d_type: 11
+    id: 532
+    o_data: Planeri
+  - d_type: 12
+    id: 533
+    o_data: /uploads/landing.png
+  - d_type: 2
+    id: 534
+    o_data: 'NULL'
+  - d_type: 17
+    id: 535
+    o_data: 1000 EVRA IZAZOV
+  - d_type: 2
+    id: 536
+    o_data: 'NULL'
+  - d_type: 2
+    id: 537
+    o_data: 'NULL'
+  - d_type: 2
+    id: 538
+    o_data: 'NULL'
+  - d_type: 2
+    id: 539
+    o_data: 'NULL'
+  - d_type: 2
+    id: 540
+    o_data: 'NULL'
+  - d_type: 2
+    id: 541
+    o_data: 'NULL'
+  - d_type: 18
+    id: 542
+    o_data: /product/talasicrnobeli
+  - d_type: 12
+    id: 543
+    o_data: /uploads/11_cb3a8c570e.png
+  - d_type: 18
+    id: 544
+    o_data: /product/cvetnicrnobeli
+  - d_type: 12
+    id: 545
+    o_data: /uploads/11_cb3a8c570e.png
+  - d_type: 18
+    id: 546
+    o_data: /product/minimalistikcrnobeli
+  - d_type: 12
+    id: 547
+    o_data: /uploads/14_07886896ac.png
+  - d_type: 18
+    id: 548
+    o_data: /product/pastelnisvetcrnobeli
+  - d_type: 12
+    id: 549
+    o_data: /uploads/12_2a9dccf9bd.png
+  - d_type: 18
+    id: 550
+    o_data: /categories/Planer
+  - d_type: 14
+    id: 551
+    o_data: 'NULL'
+  - d_type: 11
+    id: 552
+    o_data: Vidi vise...
+  - d_type: 2
+    id: 553
+    o_data: 'NULL'
+  - d_type: 2
+    id: 554
+    o_data: 'NULL'
+  - d_type: 12
+    id: 555
+    o_data: /uploads/pozadina1.png
+  - d_type: 2
+    id: 556
+    o_data: 'NULL'
+  - d_type: 11
+    id: 557
+    o_data: "\xD4\xC7\xA3CILJ MI JE DA POKA\u253C\xA2EM SAMODISCIPLINU I SEBI DOKA\u253C\
+    \xA2EM DA IMAM SNAGU VOLJE DA ELIMINI\u253C\xE1EM IMPULSIVNO I NEPOTREBNO TRO\u253C\
+    \xE1ENJE.\xD4\xC7\xD8"
+  - d_type: 2
+    id: 558
+    o_data: 'NULL'
+  - d_type: 2
+    id: 559
+    o_data: 'NULL'
+  - d_type: 2
+    id: 560
+    o_data: 'NULL'
+  - d_type: 2
+    id: 561
+    o_data: 'NULL'
+  - d_type: 2
+    id: 562
+    o_data: 'NULL'
+  - d_type: 2
+    id: 563
+    o_data: 'NULL'
+  - d_type: 2
+    id: 564
+    o_data: 'NULL'
+  - d_type: 2
+    id: 565
+    o_data: 'NULL'
+  - d_type: 2
+    id: 566
+    o_data: 'NULL'
+  - d_type: 17
+    id: 567
+    o_data: BOJA ZA VISE INSPIRACIJE
+  - d_type: 12
+    id: 568
+    o_data: /uploads/cvet.png
+  - d_type: 18
+    id: 569
+    o_data: /product/talasiuboji
+  - d_type: 12
+    id: 570
+    o_data: /uploads/talasiuboji.png
+  - d_type: 18
+    id: 571
+    o_data: /product/pastelni-svetuboji
+  - d_type: 12
+    id: 572
+    o_data: /uploads/pastelni-svetuboji.png
+  - d_type: 18
+    id: 573
+    o_data: /product/cvetniuboji
+  - d_type: 12
+    id: 574
+    o_data: /uploads/cvetniuboji.png
+  - d_type: 18
+    id: 575
+    o_data: /product/minimalistikuboji
+  - d_type: 12
+    id: 576
+    o_data: /uploads/minimalistikuboji.png
+  - d_type: 18
+    id: 577
+    o_data: /categories/limited
+  - d_type: 14
+    id: 578
+    o_data: 'NULL'
+  - d_type: 11
+    id: 579
+    o_data: Vidi vise...
+  - d_type: 5
+    id: 580
+    o_data: 'NULL'
+  - d_type: 2
+    id: 581
+    o_data: 'NULL'
+  - d_type: 2
+    id: 582
+    o_data: 'NULL'
+  - d_type: 2
+    id: 583
+    o_data: 'NULL'
+  - d_type: 2
+    id: 584
+    o_data: 'NULL'
+  - d_type: 2
+    id: 585
+    o_data: 'NULL'
+  - d_type: 2
+    id: 586
+    o_data: 'NULL'
+  - d_type: 2
+    id: 587
+    o_data: 'NULL'
+  - d_type: 17
+    id: 588
+    o_data: Kategorije
+  - d_type: 18
+    id: 589
+    o_data: /categories/Planer
+  - d_type: 18
+    id: 590
+    o_data: /categories/limited
+  - d_type: 17
+    id: 591
+    o_data: Polise
+  - d_type: 18
+    id: 592
+    o_data: /legal/privacy
+  - d_type: 18
+    id: 593
+    o_data: /legal/online-shopping
+  - d_type: 18
+    id: 594
+    o_data: /legal/payment-methods
+  - d_type: 18
+    id: 595
+    o_data: /legal/conditions
+  - d_type: 18
+    id: 596
+    o_data: /legal/return
+  - d_type: 17
+    id: 597
+    o_data: Info
+  - d_type: 22
+    id: 598
+    o_data: OM OM CODE
+  - d_type: 22
+    id: 599
+    o_data: 'MB: 66875814'
+  - d_type: 22
+    id: 5000
+    o_data: 'PIB: 113508517'
+  - d_type: 22
+    id: 5001
+    o_data: 'Email: info@omomcode.com'
+  - d_type: 22
+    id: 5002
+    o_data: 'Tel: +381 652260264'
+  - d_type: 22
+    id: 5003
+    o_data: Om om code
+  - d_type: 22
+    id: 5004
+    o_data: '@ Copyright 2023. All Rights Reserved'
+  - d_type: 12
+    id: 5005
+    o_data: /uploads/payments
+  - d_type: 11
+    id: 5006
+    o_data: Planeri
+  - d_type: 11
+    id: 5007
+    o_data: U Boji
+  - d_type: 11
+    id: 5008
+    o_data: Politika privatnosti
+  - d_type: 11
+    id: 5009
+    o_data: Uslovi online kupovine
+  - d_type: 11
+    id: 5010
+    o_data: Nacin placanja
+  - d_type: 11
+    id: 5011
+    o_data: Uslovi koriscenja
+  - d_type: 11
+    id: 5012
+    o_data: Reklamacije
+  - d_type: 16
+    id: 5013
+    o_data: 'NULL'
+tags: []
