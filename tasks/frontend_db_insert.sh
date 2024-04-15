@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Define MySQL credentials
-#MYSQL_USER="$1"
-#MYSQL_PASSWORD="$2"
-#MYSQL_DB="$3"
+MYSQL_USER="$1"
+MYSQL_PASSWORD="$2"
+MYSQL_DB="$3"
 
-MYSQL_USER="root"
-MYSQL_PASSWORD="root"
-MYSQL_DB="ecommerce_ldl_test"
+# MYSQL_USER="root"
+# MYSQL_PASSWORD="root"
+# MYSQL_DB="ecommerce_ldl_test"
 
 data_types=$(yq e -o=j -I=0 '.data_types[]' frontend.yaml)
 
@@ -60,11 +60,20 @@ while IFS= read -r section; do
     id=$(echo "$section" | yq e '.id')
     relations=$(echo "$section" | yq e '.relations')
 
+    json_array="["
+    first_element=true
+
     # Display the extracted fields
     echo "id: $id, relations: $relations"
-
+    
+    if [ $relations = 'NULL' ]; then
+		relations_str=null
+	else
+		json_array=$(echo "$relations" | jq -c .)
+		relations_str=$json_array
+    fi
     # Insert the extracted fields into the MySQL database
-    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO o_data (id, relations) VALUES ('$id', '$relations');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO o_data (id, relations) VALUES ('$id', '$relations_str');"
 done <<< "$o_data"
 
 objects=$(yq e -o=j -I=0 '.objects[]' frontend.yaml)
@@ -76,13 +85,19 @@ while IFS= read -r section; do
     logic=$(echo "$section" | yq e '.logic // "NULL"')
     children=$(echo "$section" | yq e '.children')
 
+    json_array="["
+    first_element=true
+
     # Display the extracted fields
-    echo "uuid: $uuid, layout: $layout, o_data: $o_data, logic: $logic, children: $children"
-    if [ $children == 'NULL' ]; then
-	children=null
+    echo "uuid: $uuid, layout: $layout, o_data: $o_data, logic: $logic, children: $children_str"
+    if [ $children = 'NULL' ]; then
+		children_str=null
+	else
+		json_array=$(echo "$children" | jq -c .)
+		children_str=$json_array
     fi
     # Insert the extracted fields into the MySQL database
-    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO objects (uuid, layout, o_data, logic, children) VALUES ('$uuid', $layout, $o_data, $logic, '$children');"
+    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO objects (uuid, layout, o_data, logic, children) VALUES ($uuid, $layout, $o_data, $logic, '$children_str');"
 done <<< "$objects"
 
 resolvable_tags=$(yq e -o=j -I=0 '.resolvable_tags[]' frontend.yaml)
