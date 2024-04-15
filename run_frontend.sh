@@ -65,9 +65,20 @@ source tasks/db_createuser_giveprivileges.sh "$DATABASE_USER" "$DATABASE_PASSWOR
 
 # Create database if it doesn't exist
 chmod +x tasks/db_create_database.sh
-source tasks/db_create_database.sh "$DATABASE_USER" "$DATABASE_PASSWORD" "$FRONTEND_DATABASE_NAME" "$FRONTEND_DATABASE_PORT"
+source tasks/db_create_database.sh "$DATABASE_USER" "$DATABASE_PASSWORD" "$FRONTEND_DATABASE_NAME" "$FRONTEND_DATABASE_HOST"
 
 
 # Import dump to newly created database
 chmod +x tasks/db_import_dump.sh
 source tasks/db_import_dump.sh "$DATABASE_USER" "$DATABASE_PASSWORD" "$FRONTEND_DATABASE_NAME" "$FRONTEND_DUMP_NAME" "$FRONTEND_DATABASE_HOST"
+
+chmod +x tasks/frontend_db_insert.sh
+source tasks/frontend_db_insert.sh "$DATABASE_USER" "$DATABASE_PASSWORD" "$FRONTEND_DATABASE_NAME"
+
+cd frontend
+
+npm i
+
+npm run build
+
+nohup npm run start &

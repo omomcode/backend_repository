@@ -9,6 +9,6 @@ DATABASE_HOST="$5"
 DUMP_PATH="./tasks/$DUMP_NAME.sql"
 
 # Import data from the dump file into the new database
-sudo mysql -u"$DATABASE_USER" -p"$DATABASE_PASSWORD" -h"$DATABASE_HOST" $DATABASE_NAME < "$DUMP_PATH"
+sudo mysql -u"$DATABASE_USER" -p"$DATABASE_PASSWORD" -h"$DATABASE_HOST" $DATABASE_NAME --binary-mode -o < "$DUMP_PATH"
 
 echo "Dump imported"
