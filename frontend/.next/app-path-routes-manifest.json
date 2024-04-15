@@ -1,0 +1,8 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/api/capture/route": "/api/capture",
+  "/api/orders/route": "/api/orders",
+  "/api/getData/route": "/api/getData",
+  "/payment/page": "/payment"
+}

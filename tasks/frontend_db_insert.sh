@@ -1,11 +1,15 @@
 #!/bin/bash
 
 # Define MySQL credentials
-MYSQL_USER="$1"
-MYSQL_PASSWORD="$2"
-MYSQL_DB="$3"
+#MYSQL_USER="$1"
+#MYSQL_PASSWORD="$2"
+#MYSQL_DB="$3"
 
-section=$(yq e -o=j -I=0 '.data_types[]' frontend.yaml)
+MYSQL_USER="root"
+MYSQL_PASSWORD="root"
+MYSQL_DB="ecommerce_ldl_test"
+
+data_types=$(yq e -o=j -I=0 '.data_types[]' frontend.yaml)
 
 while IFS= read -r section; do
     id=$(echo "$section" | yq e '.id')
@@ -19,7 +23,7 @@ while IFS= read -r section; do
 done <<< "$data_types"
 
 
-section=$(yq e -o=j -I=0 '.layout[]' frontend.yaml)
+layout_data=$(yq e -o=j -I=0 '.layout[]' frontend.yaml)
 
 while IFS= read -r section; do
     id=$(echo "$section" | yq e '.id')
@@ -36,7 +40,7 @@ while IFS= read -r section; do
     sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO layout (id, col_from, col_to, row_from, row_to, custom_style) VALUES ('$id', $col_from, $col_to, $row_from, $row_to, '$custom_style');"
 done <<< "$layout_data"
 
-section=$(yq e -o=j -I=0 '.logic[]' frontend.yaml)
+logic_data=$(yq e -o=j -I=0 '.logic[]' frontend.yaml)
 
 while IFS= read -r section; do
     id=$(echo "$section" | yq e '.id')
@@ -50,7 +54,7 @@ while IFS= read -r section; do
     sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO logic (id, resolvable, tags) VALUES ('$id', $resolvable, '$tags');"
 done <<< "$logic_data"
 
-section=$(yq e -o=j -I=0 '.o_data[]' frontend.yaml)
+o_data=$(yq e -o=j -I=0 '.o_data[]' frontend.yaml)
 
 while IFS= read -r section; do
     id=$(echo "$section" | yq e '.id')
@@ -61,9 +65,9 @@ while IFS= read -r section; do
 
     # Insert the extracted fields into the MySQL database
     sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO o_data (id, relations) VALUES ('$id', '$relations');"
-done <<< "$o_data_data"
+done <<< "$o_data"
 
-section=$(yq e -o=j -I=0 '.objects[]' frontend.yaml)
+objects=$(yq e -o=j -I=0 '.objects[]' frontend.yaml)
 
 while IFS= read -r section; do
     uuid=$(echo "$section" | yq e '.uuid')
@@ -74,12 +78,14 @@ while IFS= read -r section; do
 
     # Display the extracted fields
     echo "uuid: $uuid, layout: $layout, o_data: $o_data, logic: $logic, children: $children"
-
+    if [ $children == 'NULL' ]; then
+	children=null
+    fi
     # Insert the extracted fields into the MySQL database
     sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO objects (uuid, layout, o_data, logic, children) VALUES ('$uuid', $layout, $o_data, $logic, '$children');"
-done <<< "$objects_data"
+done <<< "$objects"
 
-section=$(yq e -o=j -I=0 '.resolvable_tags[]' frontend.yaml)
+resolvable_tags=$(yq e -o=j -I=0 '.resolvable_tags[]' frontend.yaml)
 
 while IFS= read -r section; do
     id=$(echo "$section" | yq e '.id')
@@ -90,9 +96,9 @@ while IFS= read -r section; do
 
     # Insert the extracted fields into the MySQL database
     sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO resolvable_tags (id, t_name) VALUES ('$id', '$t_name');"
-done <<< "$resolvable_tags_data"
+done <<< "$resolvable_tags"
 
-section=$(yq e -o=j -I=0 '.resolved_data[]' frontend.yaml)
+resolved_data=$(yq e -o=j -I=0 '.resolved_data[]' frontend.yaml)
 
 while IFS= read -r section; do
     id=$(echo "$section" | yq e '.id')
@@ -104,9 +110,9 @@ while IFS= read -r section; do
 
     # Insert the extracted fields into the MySQL database
     sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO resolved_data (id, d_type, o_data) VALUES ('$id', $d_type, '$o_data');"
-done <<< "$resolved_data_data"
+done <<< "$resolved_data"
 
-section=$(yq e -o=j -I=0 '.tags[]' frontend.yaml)
+tags=$(yq e -o=j -I=0 '.tags[]' frontend.yaml)
 
 while IFS= read -r section; do
     id=$(echo "$section" | yq e '.id')
@@ -117,4 +123,4 @@ while IFS= read -r section; do
 
     # Insert the extracted fields into the MySQL database
     sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO tags (id, t_name) VALUES ('$id', '$t_name');"
-done <<< "$tags_data"
+done <<< "$tags"
