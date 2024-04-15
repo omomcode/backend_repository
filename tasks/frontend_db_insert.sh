@@ -15,7 +15,7 @@ while IFS= read -r section; do
     custom=$(echo "$section" | yq e '.custom // ""')
 
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO data_types (id, type_name, defaultWidth, defaultHeight, custom) VALUES ('$id', '$type_name', '$defaultWidth', '$defaultHeight', '$custom');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO data_types (id, type_name, defaultWidth, defaultHeight, custom) VALUES ('$id', '$type_name', '$defaultWidth', '$defaultHeight', '$custom');"
 done <<< "$data_types"
 
 
@@ -33,7 +33,7 @@ while IFS= read -r section; do
     echo "id: $id, col_from: $col_from, col_to: $col_to, row_from: $row_from, row_to: $row_to, custom_style: $custom_style"
 
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO layout (id, col_from, col_to, row_from, row_to, custom_style) VALUES ('$id', $col_from, $col_to, $row_from, $row_to, '$custom_style');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO layout (id, col_from, col_to, row_from, row_to, custom_style) VALUES ('$id', $col_from, $col_to, $row_from, $row_to, '$custom_style');"
 done <<< "$layout_data"
 
 section=$(yq e -o=j -I=0 '.logic[]' frontend.yaml)
@@ -47,7 +47,7 @@ while IFS= read -r section; do
     echo "id: $id, resolvable: $resolvable, tags: $tags"
 
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO logic (id, resolvable, tags) VALUES ('$id', $resolvable, '$tags');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO logic (id, resolvable, tags) VALUES ('$id', $resolvable, '$tags');"
 done <<< "$logic_data"
 
 section=$(yq e -o=j -I=0 '.o_data[]' frontend.yaml)
@@ -60,7 +60,7 @@ while IFS= read -r section; do
     echo "id: $id, relations: $relations"
 
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO o_data (id, relations) VALUES ('$id', '$relations');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO o_data (id, relations) VALUES ('$id', '$relations');"
 done <<< "$o_data_data"
 
 section=$(yq e -o=j -I=0 '.objects[]' frontend.yaml)
@@ -76,7 +76,7 @@ while IFS= read -r section; do
     echo "uuid: $uuid, layout: $layout, o_data: $o_data, logic: $logic, children: $children"
 
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO objects (uuid, layout, o_data, logic, children) VALUES ('$uuid', $layout, $o_data, $logic, '$children');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO objects (uuid, layout, o_data, logic, children) VALUES ('$uuid', $layout, $o_data, $logic, '$children');"
 done <<< "$objects_data"
 
 section=$(yq e -o=j -I=0 '.resolvable_tags[]' frontend.yaml)
@@ -89,7 +89,7 @@ while IFS= read -r section; do
     echo "id: $id, t_name: $t_name"
 
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO resolvable_tags (id, t_name) VALUES ('$id', '$t_name');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO resolvable_tags (id, t_name) VALUES ('$id', '$t_name');"
 done <<< "$resolvable_tags_data"
 
 section=$(yq e -o=j -I=0 '.resolved_data[]' frontend.yaml)
@@ -103,7 +103,7 @@ while IFS= read -r section; do
     echo "id: $id, d_type: $d_type, o_data: $o_data"
 
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO resolved_data (id, d_type, o_data) VALUES ('$id', $d_type, '$o_data');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO resolved_data (id, d_type, o_data) VALUES ('$id', $d_type, '$o_data');"
 done <<< "$resolved_data_data"
 
 section=$(yq e -o=j -I=0 '.tags[]' frontend.yaml)
@@ -116,5 +116,5 @@ while IFS= read -r section; do
     echo "id: $id, t_name: $t_name"
 
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO tags (id, t_name) VALUES ('$id', '$t_name');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO tags (id, t_name) VALUES ('$id', '$t_name');"
 done <<< "$tags_data"
