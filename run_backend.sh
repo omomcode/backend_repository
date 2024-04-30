@@ -3,23 +3,27 @@
 # root user is the user who can grant privileges
 export DATABASE_USER="root"
 export DATABASE_PASSWORD="root"
-export DATABASE_NAME="ekomerctest"
+export DATABASE_NAME="ecommerce"
 export DUMP_NAME="ecommerce-20240402184403"
 export DATABASE_HOST="localhost"
 export DB_ROOT_USER="root"
 export DB_ROOT_PASSWORD="root"
 export STRAPI_USER_FIRSTNAME="MishaZ"
 export STRAPI_USER_LASTNAME="ZhivankoZ"
-export STRAPI_USER_EMAIL="tihiway2@outlook.com"
-export STRAPI_USER_PASSWORD="StrongPassword1"
+export STRAPI_USER_EMAIL="alexmitrovic993@gmail.com"
+export STRAPI_USER_PASSWORD="Smederevo123"
 export protocol="http"
 export hostname="localhost"
 export port="1337"
-export FRONTEND_DATABASE_NAME="ecommerce_ldl_test"
+export FRONTEND_DATABASE_NAME="ecommerce_ldl"
 export FRONTEND_DATABASE_HOST="localhost"
 export FRONTEND_PORT="3306"
 
+
 current_dir=$(pwd)
+
+product_array=()
+category_array=()
 
 dependency_flag=1
 
@@ -89,23 +93,23 @@ npm i
 npm run build
 nohup npm run start &
 
-sleep 10
+sleep 30
 
 cd "$current_dir"
 
 cd tasks
 
-# Create strapi user
+Create strapi user
 chmod +x strapi_createuser.sh
 ./strapi_createuser.sh "$STRAPI_USER_FIRSTNAME" "$STRAPI_USER_LASTNAME" "$STRAPI_USER_EMAIL" "$STRAPI_USER_PASSWORD" 
 
 
-# Login strapi user
+Login strapi user
 chmod +x strapi_loginuser.sh
 token=$(./strapi_loginuser.sh "$STRAPI_USER_EMAIL" "$STRAPI_USER_PASSWORD" "$protocol" "$hostname" "$port" | tr -d '\n')
 
 chmod +x create_frontend_token.sh
-frontend_token=$(./create_frontend_token.sh "$token" "$hostname" "$port" | tr -d '\n')
+frontend_token=$(./create_frontend_token.sh "$token" "$protocol" "$hostname" "$port" | tr -d '\n')
 
 check_yaml_field() {
   local field=$(yq eval "$1" storeconfig.yaml)
@@ -116,6 +120,30 @@ check_yaml_field() {
   fi
 }
 
+
+if check_yaml_field '.data.images'; then
+  source upload_images.sh "$token" "$protocol" "$hostname" "$port"
+
+  # Iterate through the array using a for loop
+  for element in "${imgs[@]}"; do
+	caption=$(echo "$element" | jq -r '.caption')
+	
+	# Check if the caption contains "product"
+    if [[ $caption == *"product"* ]]; then
+	  echo "if"
+      product_array+=("$element")
+    fi
+
+    # Check if the caption contains "category"
+    if [[ $caption == *"category"* ]]; then
+	  echo else
+      category_array+=("$element")
+    fi
+  done
+fi
+
+echo productimages "${product_array[@]}"
+echo categoryimages "${category_array[@]}"
 if check_yaml_field '.data.profile'; then
   chmod +x update_profile.sh
   ./update_profile.sh "$token" "$protocol" "$hostname" "$port"
@@ -138,22 +166,27 @@ if check_yaml_field '.data.conversionrate'; then
 fi
 if check_yaml_field '.data.category'; then
   chmod +x update_category.sh
-  ./update_category.sh "$token" "$protocol" "$hostname" "$port"
+  source update_category.sh "$token" "$protocol" "$hostname" "$port"
 fi
 if check_yaml_field '.data.subcategory'; then
   chmod +x update_subcategory.sh
   ./update_subcategory.sh "$token" "$protocol" "$hostname" "$port"
 fi
-if check_yaml_field '.data.product'; then
-  chmod +x update_product.sh
-  ./update_product.sh "$token" "$protocol" "$hostname" "$port"
-fi
 if check_yaml_field '.data.tax'; then
   chmod +x update_tax.sh
   ./update_tax.sh "$token" "$protocol" "$hostname" "$port"
 fi
+if check_yaml_field '.data.shippingpackage'; then
+  chmod +x update_package.sh
+  ./update_shippingpackage.sh "$token" "$protocol" "$hostname" "$port"
+fi
+if check_yaml_field '.data.product'; then
+  chmod +x update_product.sh
+  source update_product.sh "$token" "$protocol" "$hostname" "$port"
+fi
+
 
 cd "$current_dir"
 
 chmod +x run_frontend.sh
-./run_frontend.sh "frontend_token" "$hostname" "$port" "$protocol"
+./run_frontend.sh "frontend_token" "$hostname" "$port" "$protocol" "$FRONTEND_DATABASE_NAME"

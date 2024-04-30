@@ -2,7 +2,6 @@
 
 export DATABASE_USER="root"
 export DATABASE_PASSWORD="root"
-export FRONTEND_DATABASE_NAME="ecommerce_ldl_test"
 export FRONTEND_DATABASE_HOST="localhost"
 export DB_ROOT_USER="root"
 export DB_ROOT_PASSWORD="root"
@@ -12,6 +11,7 @@ frontend_token="$1"
 hostname="$2"
 port="$3"
 protocol="$4"
+export FRONTEND_DATABASE_NAME="$5"
 
 api_url="$protocol://$hostname:$port"
 

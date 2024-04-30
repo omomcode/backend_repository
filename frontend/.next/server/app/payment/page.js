@@ -420,7 +420,7 @@ module.exports = require("zlib");
 
 /***/ }),
 
-/***/ 94686:
+/***/ 14949:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -457,12 +457,12 @@ const tree = {
         'payment',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4067)), "/home/alex/Desktop/backend_repository/frontend/src/app/payment/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4067)), "C:\\Users\\Simparanekromeno\\Desktop\\windows test\\backend_repository\\frontend\\src\\app\\payment\\page.tsx"],
           
         }]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 74750)), "/home/alex/Desktop/backend_repository/frontend/src/app/payment/layout.tsx"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 74750)), "C:\\Users\\Simparanekromeno\\Desktop\\windows test\\backend_repository\\frontend\\src\\app\\payment\\layout.tsx"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -474,7 +474,7 @@ const tree = {
       ]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62591)), "/home/alex/Desktop/backend_repository/frontend/src/app/layout.tsx"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62591)), "C:\\Users\\Simparanekromeno\\Desktop\\windows test\\backend_repository\\frontend\\src\\app\\layout.tsx"],
 'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 95493, 23)), "next/dist/client/components/not-found-error"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
@@ -486,7 +486,7 @@ const tree = {
       }
       ]
       }.children;
-const pages = ["/home/alex/Desktop/backend_repository/frontend/src/app/payment/page.tsx"];
+const pages = ["C:\\Users\\Simparanekromeno\\Desktop\\windows test\\backend_repository\\frontend\\src\\app\\payment\\page.tsx"];
 
 // @ts-expect-error - replaced by webpack/turbopack loader
 
@@ -518,7 +518,7 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 32413:
+/***/ 18860:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8661))
@@ -576,7 +576,7 @@ var Payment = __webpack_require__(80341);
 var module_proxy = __webpack_require__(61363);
 ;// CONCATENATED MODULE: ./src/components/PaymentForm/PaymentForm.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`/home/alex/Desktop/backend_repository/frontend/src/components/PaymentForm/PaymentForm.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`C:\Users\Simparanekromeno\Desktop\windows test\backend_repository\frontend\src\components\PaymentForm\PaymentForm.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -632,7 +632,7 @@ const page_Payment = ({ params })=>{
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,794,286], () => (__webpack_exec__(94686)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,810,253], () => (__webpack_exec__(14949)));
 module.exports = __webpack_exports__;
 
 })();

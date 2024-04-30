@@ -97,7 +97,7 @@ while IFS= read -r section; do
 		children_str=$json_array
     fi
     # Insert the extracted fields into the MySQL database
-    mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO objects (uuid, layout, o_data, logic, children) VALUES ($uuid, $layout, $o_data, $logic, '$children_str');"
+    sudo mysql -u$MYSQL_USER -p$MYSQL_PASSWORD $MYSQL_DB -e "INSERT INTO objects (uuid, layout, o_data, logic, children) VALUES ($uuid, $layout, $o_data, $logic, '$children_str');"
 done <<< "$objects"
 
 resolvable_tags=$(yq e -o=j -I=0 '.resolvable_tags[]' frontend.yaml)

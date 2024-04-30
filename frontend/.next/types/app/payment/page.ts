@@ -1,4 +1,4 @@
-// File: /home/alex/Desktop/backend_repository/frontend/src/app/payment/page.tsx
+// File: C:\Users\Simparanekromeno\Desktop\windows test\backend_repository\frontend\src\app\payment\page.tsx
 import * as entry from '../../../../src/app/payment/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

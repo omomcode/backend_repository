@@ -420,7 +420,7 @@ module.exports = require("zlib");
 
 /***/ }),
 
-/***/ 30993:
+/***/ 41373:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -454,7 +454,7 @@ const tree = {
         '',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 81181)), "/home/alex/Desktop/backend_repository/frontend/src/app/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 81181)), "C:\\Users\\Simparanekromeno\\Desktop\\windows test\\backend_repository\\frontend\\src\\app\\page.tsx"],
           metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
     apple: [],
@@ -465,7 +465,7 @@ const tree = {
         }]
       },
         {
-        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62591)), "/home/alex/Desktop/backend_repository/frontend/src/app/layout.tsx"],
+        'layout': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 62591)), "C:\\Users\\Simparanekromeno\\Desktop\\windows test\\backend_repository\\frontend\\src\\app\\layout.tsx"],
 'not-found': [() => Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 95493, 23)), "next/dist/client/components/not-found-error"],
         metadata: {
     icon: [(async (props) => (await Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 73881))).default(props))],
@@ -477,7 +477,7 @@ const tree = {
       }
       ]
       }.children;
-const pages = ["/home/alex/Desktop/backend_repository/frontend/src/app/page.tsx"];
+const pages = ["C:\\Users\\Simparanekromeno\\Desktop\\windows test\\backend_repository\\frontend\\src\\app\\page.tsx"];
 
 // @ts-expect-error - replaced by webpack/turbopack loader
 
@@ -509,7 +509,7 @@ const routeModule = new AppPageRouteModule({
 
 /***/ }),
 
-/***/ 11164:
+/***/ 21520:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 97820))
@@ -1301,7 +1301,7 @@ var jsx_runtime_ = __webpack_require__(56786);
 var module_proxy = __webpack_require__(61363);
 ;// CONCATENATED MODULE: ./src/stranice/Home/Home.tsx
 
-const proxy = (0,module_proxy.createProxy)(String.raw`/home/alex/Desktop/backend_repository/frontend/src/stranice/Home/Home.tsx`)
+const proxy = (0,module_proxy.createProxy)(String.raw`C:\Users\Simparanekromeno\Desktop\windows test\backend_repository\frontend\src\stranice\Home\Home.tsx`)
 
 // Accessing the __esModule property and exporting $$typeof are required here.
 // The __esModule getter forces the proxy target to create the default export
@@ -1356,7 +1356,7 @@ function page_Home() {
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,794,747,286], () => (__webpack_exec__(30993)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,810,747,253], () => (__webpack_exec__(41373)));
 module.exports = __webpack_exports__;
 
 })();

@@ -2,7 +2,7 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/page": "app/page.js",
   "/api/capture/route": "app/api/capture/route.js",
-  "/api/orders/route": "app/api/orders/route.js",
   "/api/getData/route": "app/api/getData/route.js",
+  "/api/orders/route": "app/api/orders/route.js",
   "/payment/page": "app/payment/page.js"
 }

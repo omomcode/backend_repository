@@ -12,8 +12,20 @@ DB_ROOT_PASSWORD="$5"
 # fi
 
 sudo mysql -u"$DB_ROOT_USER" -p"$DB_ROOT_PASSWORD" -h "$DATABASE_HOST" <<EOF
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
+ALTER USER '$DATABASE_USER'@'$DATABASE_HOST' IDENTIFIED BY 'root';
 GRANT ALL PRIVILEGES ON *.* TO '$DATABASE_USER'@'$DATABASE_HOST' WITH GRANT OPTION;
+flush privileges;
+EOF
+
+sudo mysql -u"$DB_ROOT_USER" -p"$DB_ROOT_PASSWORD" -h "$DATABASE_HOST" <<EOF
+ALTER USER 'root'@'127.0.0.1' IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'127.0.0.1' WITH GRANT OPTION;
+flush privileges;
+EOF
+
+sudo mysql -u"$DB_ROOT_USER" -p"$DB_ROOT_PASSWORD" -h "$DATABASE_HOST" <<EOF
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'root';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
 flush privileges;
 EOF
 

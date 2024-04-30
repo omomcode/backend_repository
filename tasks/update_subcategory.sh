@@ -15,11 +15,9 @@ response_object=$(echo "$json_data" | jq '.data.subcategory')
 readarray -t objects < <(jq -c '.[]' <<< "$response_object")
 
 for row in "${objects[@]}"; do
-  echo "this is a row" $row
   row_id=$(echo "$row" | jq -r '.id')
-  json_temp=$(echo "$row" | jq -c '.')
-  json_payload=$(echo "$json_temp" | jq -c '{"data": . }')
-  echo $row_id
+  json_temp=$(echo "$row" | jq -c '. + {"publishedAt": "'"$(date +%s)"'"}')
+  json_payload=$(echo "$json_temp" | jq -c '{"data": .}')
   if [[ " ${ids[@]} " =~ " $row_id " ]]; then
     curl -X PUT -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "$json_payload" "$api_url/subcategory/update/$row_id"
   else

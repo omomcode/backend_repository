@@ -12,7 +12,7 @@ module.exports = require("os");
 
 /***/ }),
 
-/***/ 85817:
+/***/ 67827:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -58,7 +58,7 @@ async function POST(req, res) {
     }
 }
 
-;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Forders%2Froute&name=app%2Fapi%2Forders%2Froute&pagePath=private-next-app-dir%2Fapi%2Forders%2Froute.ts&appDir=%2Fhome%2Falex%2FDesktop%2Fbackend_repository%2Ffrontend%2Fsrc%2Fapp&appPaths=%2Fapi%2Forders%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
+;// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?page=%2Fapi%2Forders%2Froute&name=app%2Fapi%2Forders%2Froute&pagePath=private-next-app-dir%2Fapi%2Forders%2Froute.ts&appDir=C%3A%5CUsers%5CSimparanekromeno%5CDesktop%5Cwindows%20test%5Cbackend_repository%5Cfrontend%5Csrc%5Capp&appPaths=%2Fapi%2Forders%2Froute&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!
 
 // @ts-ignore this need to be imported from next/dist to be external
 
@@ -77,7 +77,7 @@ const routeModule = new AppRouteRouteModule({
         filename: "route",
         bundlePath: "app/api/orders/route"
     },
-    resolvedPagePath: "/home/alex/Desktop/backend_repository/frontend/src/app/api/orders/route.ts",
+    resolvedPagePath: "C:\\Users\\Simparanekromeno\\Desktop\\windows test\\backend_repository\\frontend\\src\\app\\api\\orders\\route.ts",
     nextConfigOutput,
     userland: route_namespaceObject
 });
@@ -99,7 +99,7 @@ const originalPathname = "/api/orders/route";
 var __webpack_require__ = require("../../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [587,501,122], () => (__webpack_exec__(85817)));
+var __webpack_exports__ = __webpack_require__.X(0, [587,501,122], () => (__webpack_exec__(67827)));
 module.exports = __webpack_exports__;
 
 })();
